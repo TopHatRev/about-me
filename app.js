@@ -1,30 +1,61 @@
-let userName = prompt('What is your name?');
-alert('Hello there ' + userName);
+let userPoints = 0;
 
-let question1 = confirm("Did I live in Hungary for two and a half years?");
-if(question1 == true) {
-  alert("Correct.");
-} else {
-  alert("Incorrect.");
+alert("Welcome to my guessing game.");
+
+let user = prompt("What can I call you?");
+
+// ensure the user ACTUALLY gives their name
+while (!user) {
+  user = prompt("I really need your name, please give it.");
 }
 
-let question2 = confirm("Was I born in Norwich?");
-if(question2 == true) {
-  alert("Correct.");
-} else {
-  alert("Incorrect.");
+// lament at Ronald
+if (user == "Matt") {
+  alert("Ew.");
 }
 
-let question3 = confirm("Do I have a half brother?");
-if(question3 == true) {
-  alert("Correct.");
-} else {
-  alert("Incorrect.");
+alert("Hello there " + user + "! I'm so glad you decided to visit my website!");
+
+// question one
+let filmQuestion = prompt("What is one my favourite films?.").toLowerCase();
+
+let filmsILike = ["whiplash", "come and see", "nightcrawler", "dunkirk"];
+
+for (let i = 0; i < filmsILike.length; i++) {
+  if (filmQuestion == filmsILike[i]) {
+    alert("Yes I love " + filmQuestion + "!");
+    userPoints++;
+  }
 }
 
-let question4 = confirm("Do I support Ipswich Town?");
-if(question4 == true) {
-  alert("Incorrect.");
+// question two
+let footballQuestion = confirm("Do I support Norwich");
+
+if (footballQuestion == true) {
+  alert("Good.");
+  userPoints++;
 } else {
-  alert("Correct.");
+  alert(">:(");
 }
+
+let houseQuestion = confirm("Have I lived abroad?");
+
+if (houseQuestion == true) {
+  alert("Indeed.");
+  userPoints++;
+} else {
+  alert("Nope.");
+}
+
+let foodQuestion = prompt("What is one my favourite foods?.").toLowerCase();
+
+let foodILike = ["ramen", "carbonara", "steak au poivre"];
+
+for (let i = 0; i < foodILike.length; i++) {
+  if (foodQuestion == foodILike[i]) {
+    alert(foodQuestion + " is peak.");
+    userPoints++;
+  }
+}
+
+alert("Well done " + user + "! You scored " + userPoints + "/4");
