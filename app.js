@@ -63,20 +63,9 @@ function foodQuestion() {
     }
   }
 }
-function danceQuestion() {
-  let Question5 = confirm("What do you think ,  do i like dancing? ");
-
-  if (Question5 == true) {
-    alert("Well done ! ");
-    userPoints++;
-  } else {
-    alert("ohh noo");
-  }
-}
 
 filmQuestion();
 footballQuestion();
 houseQuestion();
 foodQuestion();
-danceQuestion();
-alert("Well done " + user + "! You scored " + userPoints + "/5");
+alert("Well done " + user + "! You scored " + userPoints + "/4");
