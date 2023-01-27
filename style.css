@@ -1,6 +1,7 @@
 body{
   background-color: darkslategrey;
   color:aliceblue;
+  font-family: monospace;
 }
 
 h1{
@@ -10,6 +11,53 @@ h1{
 
 ul {
   border: lightslategrey;
-  background-color: rgb(110, 125, 139);
+  background-color: #6e7d8b;
+  list-style: none;
 }
 
+#introP{
+  background-color: #6e7d8b;
+  color: aliceblue;
+  border: 10px solid lightslategrey;
+  width: 60%;
+  position: relative;
+  text-align: center;
+  margin: auto;
+}
+
+.introP2{
+  background-color: #6e7d8b;
+  border: 10px solid lightslategrey;
+  width: 60%;
+  position: relative;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.poster1 img{
+  width: 40%;
+  margin:20px auto;
+  display: flex;
+  border: 10px solid lightslategrey;
+}
+
+.poster2 img{
+  width: 40%;
+  margin:20px auto;
+  display: flex;
+  border: 10px solid lightslategrey;
+}
+
+.poster3 img{
+  width: 40%;
+  margin:20px auto;
+  display: flex;
+  border: 10px solid lightslategrey;
+}
+
+footer{
+  text-align: center;
+  font-size: 20px;
+  font-family: monospace;
+  font-weight: bold;
+}
